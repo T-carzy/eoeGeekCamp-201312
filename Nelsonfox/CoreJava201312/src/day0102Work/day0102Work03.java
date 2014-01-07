@@ -14,20 +14,23 @@ public class day0102Work03 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int[] a = { 5, 10, 5, 8, 6, 8 };
-		int count = 1;
+		int[] a = { 5, 10, 5, 8, 6, 10, 21, 32 };
+		System.out.println((Arrays.toString(a)));
 		for (int i = 0; i < a.length; i++) {
-			for (int j = 1; j < a.length; j++) {
+			for (int j = i + 1; j < a.length; j++) {
 				if (a[i] == a[j]) {
-					int temp = a[j];
-					a[j] = a[j + 1];
-					a[j + 1] = temp;
+					a = delete(a, j);
 				}
 			}
 		}
-		count++;
-		a = Arrays.copyOf(a, a.length - count);
 		System.out.println(Arrays.toString(a));
 	}
 
+	private static int[] delete(int[] b, int j) {
+		for (int k = j; k < b.length - 1; k++) {
+			b[k] = b[k + 1];
+		}
+		b = Arrays.copyOf(b, b.length - 1);
+		return b;
+	}
 }
