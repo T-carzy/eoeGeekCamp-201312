@@ -2,19 +2,16 @@ package ClassTestday02;
 
 public class Test10 {
 
-	/**
-	 * ±àÐ´Ò»¸öÊÇ²»ÊÇÍ¨¹ý¿¼ÊÔµÄ´úÂë
-	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-boolean pass;//±íÊ¾ÊÇ²»ÊÇÍ¨¹ý¿¼ÊÔ
-pass=true;//±íÊ¾Í¨¹ý¿¼ÊÔ
-System.out.println("¿¼ÊÔÍ¨¹ý"+pass);
-pass=false;//±íÊ¾Ã»Í¨¹ý¿¼ÊÔ
-System.out.println("¿¼ÊÔÃ»Í¨¹ý"+pass);
-int score=65;//ÉèÖÃ¿¼ÊÔ·ÖÊý
-pass=score>60;//½«score>=60µÄ½á¹û±£´æÔÚpass±äÁ¿ÖÐ
-System.out.println("¿¼ÊÔÍ¨¹ý£º"+pass);
+boolean pass;//ï¿½ï¿½Ê¾ï¿½Ç²ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+pass=true;//ï¿½ï¿½Ê¾Í¨ï¿½ï¿½ï¿½ï¿½
+System.out.println("ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½"+pass);
+pass=false;//ï¿½ï¿½Ê¾Ã»Í¨ï¿½ï¿½ï¿½ï¿½
+System.out.println("ï¿½ï¿½ï¿½ï¿½Ã»Í¨ï¿½ï¿½"+pass);
+int score=65;//ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½Ô·ï¿½ï¿½ï¿½
+pass=score>60;//ï¿½ï¿½score>=60ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½passï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+System.out.println("ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½"+pass);
 	}
 
 }

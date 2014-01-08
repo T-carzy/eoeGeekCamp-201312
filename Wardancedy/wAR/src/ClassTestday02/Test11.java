@@ -3,15 +3,15 @@ package ClassTestday02;
 public class Test11 {
 
 	/**
-	 * Ê¾Àı£ºintÀàĞÍ×ª»»ÎªlongÀàĞÍ¡£
-	 * ³¬¹ı32Î»µÄ¸ßÎ»×Ô¶¯²¹0»ò1
+	 * intç±»å‹çš„æ•°æ®è‡ªåŠ¨è½¬æ¢ä¸ºlongç±»å‹
+	 * è¶…è¿‡32ä½çš„é«˜ä½è‡ªåŠ¨è¡¥0æˆ–1
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
   int i=-2;
   long l=i;
-  System.out.println("intÀàĞÍµÄ-2£º"+Integer.toBinaryString(i));
-  System.out.println("longÀàĞÍµÄ-2£º"+Long.toBinaryString(l));
+  System.out.println("intï¿½ï¿½ï¿½Íµï¿½-2ï¿½ï¿½"+Integer.toBinaryString(i));
+  System.out.println("longï¿½ï¿½ï¿½Íµï¿½-2ï¿½ï¿½"+Long.toBinaryString(l));
 	}
 
 }

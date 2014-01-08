@@ -3,7 +3,7 @@ package ClassTestday02;
 public class Test08 {
 
 	/**
-	 *±¾ÀýÑÝÊ¾£º¸¡µã¼ÆËãµÄÎó²î
+	 * æœ¬ä¾‹æ¼”ç¤ºï¼šæµ®ç‚¹è®¡ç®—çš„è¯¯å·®
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

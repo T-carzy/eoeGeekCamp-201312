@@ -3,14 +3,14 @@ package ClassTestday02;
 public class Test20 {
 
 	/**
-	 * Ê¾Àı£º×ªÒå·ûºÅ
+ * ç¤ºä¾‹ï¼šè½¬ä¹‰ç¬¦å·
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-System.out.println("\t°³ÔÚµÚ11¸öÎ»ÖÃ¿ªÊ¼ÏÔÊ¾µÄ");
-System.out.println("ÏÂÒ»¸öÊä³öºÍÎÒ²»ÔÚÍ¬Ò»ĞĞn");
-System.out.println("\"Ë«ÒıºÅºÍÎÒÒ»ÆğÊä³öÁË£¡\"");
-System.out.println("ÏÔÊ¾Ò»¸öÂ·¾¶: d:\\java\\basic\\day01");
+System.out.println("\tï¿½ï¿½ï¿½Úµï¿½11ï¿½ï¿½Î»ï¿½Ã¿ï¿½Ê¼ï¿½ï¿½Ê¾ï¿½ï¿½");
+System.out.println("ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Í¬Ò»ï¿½ï¿½n");
+System.out.println("\"Ë«ï¿½ï¿½Åºï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½\"");
+System.out.println("ï¿½ï¿½Ê¾Ò»ï¿½ï¿½Â·ï¿½ï¿½: d:\\java\\basic\\day01");
 	}
 
 }

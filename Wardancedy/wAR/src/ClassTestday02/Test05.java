@@ -3,14 +3,14 @@ package ClassTestday02;
 public class Test05 {
 
 	/**
-	 * @param args
+	 * 鍙橀噺鐨勪綔鐢ㄥ煙绀轰緥(3)
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String name="张三";
+		String name="寮犱笁";
 		System.out.println(name);
 		{
-			//String name="张三";
+			//String name="寮犱笁";
 			System.out.println(name);
 	}
 	}

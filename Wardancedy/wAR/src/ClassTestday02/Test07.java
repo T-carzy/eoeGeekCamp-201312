@@ -3,12 +3,12 @@ package ClassTestday02;
 public class Test07 {
 
 	/**
-	 * @param args
+	 * int绫诲瀷杞崲涓篵yte绫诲瀷绀轰緥
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		byte b1=5;
-		//byte b2=b1+3;//编译出错，大类型的数据不能存放在小类型的变量中
+		//byte b2=b1+3;//锟斤拷锟斤拷锟斤拷?锟斤拷锟斤拷锟酵碉拷锟斤拷莶锟斤拷艽锟斤拷锟斤拷小锟斤拷锟酵的憋拷锟斤拷锟斤拷
 System.out.println("b1="+b1);
 	}
 

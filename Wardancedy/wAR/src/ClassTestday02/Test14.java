@@ -3,12 +3,12 @@ package ClassTestday02;
 public class Test14 {
 
 	/**
-	 * Ê¾Àı£ºintÀàĞÍ×ª»»ÎªbyteµÄÀàĞÍ
+	 * ç¤ºä¾‹ï¼šintç±»å‹è½¬æ¢ä¸ºbyteç±»å‹ã€‚
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		byte b = 5;
-		b = (byte) (b + 5);// Ç¿ÖÆÀàĞÍ×ª»»
+		b = (byte) (b + 5);// Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
 //		b=(byte) 1000;
 	}
 
