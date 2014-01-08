@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用  户 名" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvName"
+        android:layout_toRightOf="@id/tvName"
+        android:hint="字符在2~10个之间" />
+
+    <TextView
+        android:id="@+id/tvPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/etName"
+        android:text="输入密码" />
+
+    <EditText
+        android:id="@+id/etPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvPwd"
+        android:layout_below="@id/etName"
+        android:layout_toRightOf="@id/tvPwd"
+        android:hint="字符在2~10个之间" />
+    <TextView
+        android:id="@+id/tvConfirmPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/etPwd"
+        android:text="确认密码" />
+
+    <EditText
+        android:id="@+id/etConfirmPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvConfirmPwd"
+        android:layout_below="@id/etPwd"
+        android:layout_toRightOf="@id/tvConfirmPwd"
+        android:hint="字符在2~10个之间" />
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/etConfirmPwd"
+        android:text="选择性别" />
+
+    <RadioGroup
+        android:id="@+id/rgSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvSex"
+        android:layout_below="@id/etConfirmPwd"
+        android:layout_toRightOf="@id/tvSex"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rgSex"
+        android:layout_marginTop="10dp"
+        android:text="所在地" />
+
+    <Spinner
+        android:id="@+id/spinCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvAddress"
+        android:layout_below="@id/rgSex"
+        android:layout_toRightOf="@id/tvAddress"
+        android:entries="@array/citys" />
+
+    <TextView
+        android:id="@+id/tvHobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/spinCity"
+        android:layout_marginTop="15dp"
+        android:text="爱好" />
+
+    <RadioGroup
+        android:id="@+id/rgHobby"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinCity"
+        android:layout_toRightOf="@id/tvHobby"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读书" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旅游" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玩游戏" />
+    </RadioGroup>
+	<Button 
+	    android:id="@+id/btnRegister"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@id/rgHobby"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:drawableLeft="@drawable/login32x32"
+	    android:text="注册"
+	    android:textColor="#fff"
+	    android:padding="3dp"
+	    android:background="@drawable/btn_bg"/>
+	<Button 
+	    android:id="@+id/btnExit"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@id/rgHobby"
+	    android:layout_toRightOf="@id/btnRegister"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="3dp"
+	    android:drawableLeft="@drawable/exit32x32"
+	    android:text="取消"
+	    android:textColor="#fff"
+	    android:background="@drawable/btn_bg"/>		
+</RelativeLayout>
