@@ -4,5 +4,16 @@
     <string name="app_name">Android</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+	<string-array name="years">
+	    <item >2020</item>
+	    <item >2030</item>
+	    <item >2040</item>
+	    <item >2050</item>
+	    <item >2060</item>
+	    <item >2070</item>
+	    <item >2080</item>
+	    <item >2090</item>
+	    <item >2010</item>
+	    <item >2000</item>
+	</string-array>
 </resources>
