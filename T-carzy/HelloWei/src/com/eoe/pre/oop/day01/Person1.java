@@ -1,7 +1,7 @@
 package com.eoe.pre.oop.day01;
 
 public class Person1 {
-	public static String name;
+	protected static String name;
 	public static int age;
 	public static double height;
 	public static char sex;
@@ -51,6 +51,36 @@ public class Person1 {
 		this(name,age,height,type);
 		this.sex=sex;
 	}
+	public Person1(String name, char sex, int age, 
+			double height, String type){
+		this(name,age,height,type,sex);
+	}
 	
+	public String toString(){
+		return this.name;
+	}
+	public boolean equals(Object obj){
+		if(obj==null){
+			return false;
+		}
+		Person other=null;
+		if(obj instanceof Person){
+			other=(Person) obj;
+		}else{
+			return false;
+			
+		}
+		if(obj==this){
+			return true;
+		}
+		return this.name.equals(other.name)&&this.sex==other.sex&&
+		this.age==other.age&&this.height-other.height<0.01&&
+		this.type.equals(other.type);
+	}
+	public static void main(String[] args) {
+		Person1 p=new Person1("张飞",'女',22,2.22,"狂野的");
+		p.say();
+	}
+	}
 
-}
+
