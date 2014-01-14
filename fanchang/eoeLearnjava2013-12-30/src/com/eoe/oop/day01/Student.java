@@ -1,15 +1,13 @@
 package com.eoe.oop.day01;
 
-import java.util.Arrays;
-
 public class Student {
 
 	/**
-	 * ´ÓÁ½¸öÑ§ÉúµÄÏà¹ØĞÅÏ¢ÖĞ³éÈ¡³öÊôĞÔºÍ·½·¨,·â×°ÔÚStudentÀà
+	 * ä»ä¸¤ä¸ªå­¦ç”Ÿçš„ç›¸å…³ä¿¡æ¯ä¸­æŠ½å–å‡ºå±æ€§å’Œæ–¹æ³•,å°è£…åœ¨Studentç±»
 	 * @param args
 	 */
 	
-	//¶¨ÒåÎå¸ö±äÁ¿
+	//å®šä¹‰äº”ä¸ªå˜é‡
 	public String name;
 	public char sex;
 	public int age;
@@ -17,8 +15,13 @@ public class Student {
 	public String type;
 	public String inSchool;
 	public String inClass;
-	
-	//¹¹Ôì²ÎÊı·½·¨
+	//æ— å‚çš„
+	public Student() {
+		super();
+	}
+
+
+	//æ„é€ 5ä¸ªå‚æ•°çš„æ–¹æ³•
 	public Student(String name,int age,double height,String type,
 			char sex,String inSchool,String inClass){
 		this.name=name;
@@ -31,22 +34,22 @@ public class Student {
 	}
 	
 
-	//´´½¨Ò»¸ösay·½·¨±íÊ¾ÒªËµµÄ»°
+	//åˆ›å»ºä¸€ä¸ªsayæ–¹æ³•è¡¨ç¤ºè¦è¯´çš„è¯
 	public void say(){
-		System.out.println("àË£¬´ó¼ÒºÃ£¬°³½Ğ"+name+",½ñÄê"
-				+age+"Ëê,Éí¸ß"+height+"Ã×,°³ÊÇÒ»¸ö"
-				+type+sex+"Ê¿");
-		System.out.println("°³ÔÚ"+inSchool+inClass+"Ñ§Ï°");
-		System.out.println("°³¸ø´ó¼Ò±íÑİÁ½¸ö±äÁ¿Ïà½»»»µÄËã·¨");				
+		System.out.println("å—¨ï¼Œå¤§å®¶å¥½ï¼Œä¿ºå«"+name+",ä»Šå¹´"
+				+age+"å²,èº«é«˜"+height+"ç±³,ä¿ºæ˜¯ä¸€ä¸ª"
+				+type+sex+"å£«");
+		System.out.println("ä¿ºåœ¨"+inSchool+inClass+"å­¦ä¹ ");
+		System.out.println("ä¿ºç»™å¤§å®¶è¡¨æ¼”ä¸¤ä¸ªå˜é‡ç›¸äº¤æ¢çš„ç®—æ³•");				
 	}
 	
-	//´´½¨Ò»¸öfeeling·½·¨±í´ïÇé¸Ğ
+	//åˆ›å»ºä¸€ä¸ªfeelingæ–¹æ³•è¡¨è¾¾æƒ…æ„Ÿ
 	public void feeling(){
-		System.out.println("°³ÕÒµ½ºÃ¹¤×÷À²!,ÔÂĞÂ8k");
-		System.out.println("ÎûÎû...");
+		System.out.println("ä¿ºæ‰¾åˆ°å¥½å·¥ä½œå•¦!,æœˆæ–°8k");
+		System.out.println("å˜»å˜»...");
 	}
 	
-	//´´½¨Ò»¸ö½»»»±äÁ¿µÄ·½·¨
+	//åˆ›å»ºä¸€ä¸ªäº¤æ¢å˜é‡çš„æ–¹æ³•
 	public void swap(int[] a,int i,int j){
 		int c=a[j];
 		a[j]=a[i];
@@ -54,34 +57,6 @@ public class Student {
 	}
 	
 	public static void main(String[] args) {
-		//µÚÒ»¸öÑ§Ô±
-		Student student1 = new Student("ÁºÎÄ·å",25,1.7,"ºÀ·ÅµÄ",'ÄĞ',
-				"eoe¼«¿ÍÑ§Ôº","Android1205°à");
-		student1.say();
-		int[] a1={10,5};
-		System.out.println(Arrays.toString(a1));
-		student1.swap(a1,0,1);
-		System.out.println("±ä");
-		System.out.println(Arrays.toString(a1));
-		student1.feeling();
 		
-		
-		//µÚ¶ş¸öÑ§Ô±
-		Student student2 = new Student("ÁºÎÄ·å",25,1.7,"ºÀ·ÅµÄ",'ÄĞ',
-				"eoe¼«¿ÍÑ§Ôº","Android1205°à");
-		student2.name="¸ßÉº";
-		student2.sex='Å®';
-		student2.height=1.69;
-		student2.age=24;
-		student2.type="»îÆÃµÄ";
-		student2.inSchool="eoe¼«¿ÍÑ§Ôº";
-		student2.inClass="Android1205°à";
-		student2.say();
-		int[] a2={100,1000};
-		System.out.println(Arrays.toString(a2));
-		student2.swap(a2,0,1);
-		System.out.println("±ä");
-		System.out.println(Arrays.toString(a2));
-		student2.feeling();
 	}
 }
