@@ -1,6 +1,6 @@
 package com.eoe.pre.day03.action;
 
-public class Company implements Action{
+public class Company implements Action, com.eoe.oop.day03.action.Action{
 
 	@Override
 	public void run() {
