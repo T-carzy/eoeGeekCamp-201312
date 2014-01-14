@@ -1,0 +1,11 @@
+package com.eoe.pre.oop.day03.entity;
+
+public class Car implements Action{
+
+	@Override
+	public void run() {
+			System.out.println(Action.CAR+"在行驶");
+	}
+	
+
+}
