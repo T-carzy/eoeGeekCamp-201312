@@ -2,7 +2,7 @@ package com.eoe.sel.day01;
 
 import java.util.Scanner;
 
-public class Exception {
+public class _Exception {
 
 	public static void main(String[] args) {
 		System.out.println("1-内存溢出异常");
