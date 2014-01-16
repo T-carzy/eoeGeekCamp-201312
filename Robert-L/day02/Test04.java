@@ -1,19 +1,48 @@
-package com.eoe.pre.oop.day02;
+package com.eoe.se1.day02;
+
+import java.util.Scanner;
 
 public class Test04 {
-	/**
-	 * instanceOf示例
-	 */
 	public static void main(String[] args) {
-		// 以下三个命令将会出现类型转换异常
-		Person person = new Teacher();
-		Student stu = (Student) person;
-		// 用instanceOf关键字在类型转换时进行类型判断
-		if (person instanceof Student) {
-			Student student = (Student) person;
-			System.out.println("person引用的对象是Student类型");
-		} else {
-			System.out.println("person引用的对象是Student类型");
+		// 第一步，创建两个按钮
+		Button btnLogin = new Button();
+		Button btnRegister = new Button();
+		/*
+		 * 第二步，将两个按钮点击事件响应的代码预存在两个按钮的mOnClickListener属性中
+		 */
+
+		btnLogin.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick() {
+				System.out.println("执行登陆操作");
+			}
+		});
+
+		RegisterListener l = new RegisterListener();
+		btnRegister.setOnClickListener(l);
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("1-登陆");
+		System.out.println("2-注册");
+		int select = scanner.nextInt();
+		switch (select) {
+		case 1:
+			btnLogin.performClick();
+			break;
+
+		case 2:
+			btnRegister.performClick();
+			break;
 		}
+
+	}
+
+	static class RegisterListener implements OnClickListener {
+
+		@Override
+		public void onClick() {
+			System.out.println("执行注册操作");
+		}
+
 	}
 }
