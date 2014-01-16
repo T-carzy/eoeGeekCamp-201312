@@ -45,6 +45,8 @@
        android:layout_below="@id/etName"
        android:layout_toRightOf="@id/tvConfirmPwd"
        android:hint="输入一万字以内"       />
+   <TextView 
+       android:id=""/>
     
 
 </RelativeLayout>

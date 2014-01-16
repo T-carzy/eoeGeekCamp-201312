@@ -20,6 +20,13 @@ public class User {
 				this.phone = phone;
 				this.email = email;
 			}
+			@Override
+			public String toString() {
+				return "User [id=" + id + ", name=" + name + ", password="
+						+ password + ", phone=" + phone + ", email=" + email
+						+ "]";
+			}
+			
 			
 
 }
