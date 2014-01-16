@@ -1,6 +1,6 @@
 package com.eoe.oop.day02;
 
-import Test04.class01;
+import com.eoe.se1.day03.class01;
 
 public class Code04 {
 

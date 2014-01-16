@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     android:columnCount="5" >
 	<!--第一行，输入用户名-->
-    <TextView 
-        android:text="输入用户名" />
+    <TextView android:text="输入用户名" />
     <EditText
         android:id="@+id/etUserName"
         android:layout_columnSpan="4"
