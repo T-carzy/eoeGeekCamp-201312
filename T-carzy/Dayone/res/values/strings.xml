@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dayone</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+<string-array name="citys">
+    <item>地球</item>
+    <item>火星</item>
+    <item>土星</item>
+    <item>金星</item>
+    <item>太阳</item>
+    <item>月球</item>
+    <item>冥王星</item>
+    <item>海王星</item>
+</string-array>
+</resources>

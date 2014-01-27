@@ -174,7 +174,17 @@ public class CalculatorActivity extends Activity implements OnClickListener{
 			sb.delete(0, sb.length());
 		
 			break;
-			
+		case R.id.tuige:
+			if(input.getText().toString().length() > 0){
+                input.setText(input.getText().toString().
+               substring(0, input.getText().toString().length() - 1)); 
+			input.toString();
+			}
+//		case R.id.qingping:
+//			if(input.getText().toString().length() > 0){
+//				StringBuilder ss=new StringBuilder("");
+//				input.setText(ss.toString());
+//			}
 		}
 	}
 	
