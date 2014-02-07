@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5"
+    android:orientation="horizontal" >
+
+    <TextView android:text="用户名" />
+
+    <EditText
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:hint="3-10个字符" />
+
+    <TextView android:text="密   码" />
+
+    <EditText
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:hint="3-10个字符"
+        android:password="true" />
+
+    <Button
+        android:text="不"
+        android:visibility="invisible" />
+
+    <Button android:text="登陆" />
+
+    <Button
+        android:text="不"
+        android:visibility="invisible" />
+
+    <Button android:text="取消" />
+
+    <Button
+        android:text="不"
+        android:visibility="invisible" />
+
+</GridLayout>
