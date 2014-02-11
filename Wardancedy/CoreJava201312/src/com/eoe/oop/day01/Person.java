@@ -1,6 +1,7 @@
 package com.eoe.oop.day01;
 
 public class Person {
+	static int count;//计数：Person对象创建的次数
 	//对象的成员变量
 	public String name;
 	public char sex;
@@ -20,6 +21,7 @@ public class Person {
 	}
 	//无参构造(器)方法,JVM默认提供一个构造方法
 	public Person(){
+		count++;
 		name="张三";
 		sex='男';
 		age=18;
@@ -34,31 +36,47 @@ public class Person {
 		this(name);
 		this.sex=sex;
 	}
+	
+	/**
+	 * @param name
+	 * @param sex
+	 * @param age
+	 * @param height
+	 * @param type
+	 */
+	public Person(String name, char sex, int age, double height, String type) {
+		super();
+		this.name = name;
+		this.sex = sex;
+		this.age = age;
+		this.height = height;
+		this.type = type;
+	}
+	@Override
+	public String toString() {
+		return this.name;//返回人名
+	}
+	//重写、覆写Object类的equals()
+	@Override
+	public boolean equals(Object obj) {
+		if(obj==null){
+			return false;
+		}
+		Person other=null;
+		if(obj instanceof Person){
+			other=(Person) obj;
+		}else{
+			return false;
+		}
+		if(obj==this){
+			return true;
+		}
+		return this.name.equals(other.name)&&this.sex==other.sex;
+	}
 	public static void main(String[] args) {
-		//JVM gc
-//		Person p1=new Person();
-//		p1.name="李伟";
-//		p1.sex='男';
-//		p1.age=22;
-//		p1.height=1.8;
-//		p1.type="豪放的";
-//		p1.say();
-//		p1.feeling("俺找到好工作啦，月薪8k", "哈哈....");
-//		p1.feeling("俺失恋啦!","哇哇....");
-//		
-//		p1=new Person();
-//		p1.name="梁文峰";
-//		p1.sex='男';
-//		p1.age=25;
-//		p1.height=1.7;
-//		p1.type="热情大方";
-//		p1.say();
-//		p1.feeling("俺捡了五百万", "嘻嘻...");
-//		p1.feeling("俺被人骗了五百万", "呜呜...");
-//		Person p=new Person();
-//		p.say();
 		Person p=new Person("张飞",'女');
 		p.say();
-		Person p2=new Person();
+		//Person p2=new Person();
+		//System.out.println(p2.count);
 	}
 }

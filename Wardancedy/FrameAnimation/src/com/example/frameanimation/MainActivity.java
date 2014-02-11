@@ -10,35 +10,43 @@ import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 
-
 	private ImageView imageView;
 
 	private AnimationDrawable drawable;
 
-	private OnClickListener onClickListener=new OnClickListener() {
+//	private OnClickListener onClickListener = new OnClickListener() {
+//
+//		@Override
+//		public void onClick(View arg0) {
+//			switch (arg0.getId()) {
+//			case R.id.playBtn:
+//				drawable.start();
+//				break;
+//
+//			case R.id.stopBtn:
+//				drawable.stop();
+//				break;
+//			}
+//		}
+//	};
 
-		@Override
-		public void onClick(View arg0) {
-			switch (arg0.getId()) {
-			case R.id.playBtn:
-				drawable.start();
-				break;
+	public void play(View v) {
+		drawable.start();
+	}
 
-			case R.id.stopBtn:
-				drawable.stop();
-				break;
-			}
-		}
-	};
+	public void stop(View v) {
+		drawable.stop();
+	}
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		imageView=(ImageView) findViewById(R.id.myImage);
+		imageView = (ImageView) findViewById(R.id.myImage);
 		imageView.setBackgroundResource(R.drawable.my_anim);
-		drawable=(AnimationDrawable) imageView.getBackground();
-		findViewById(R.id.playBtn).setOnClickListener(onClickListener);
-		findViewById(R.id.stopBtn).setOnClickListener(onClickListener);
+		drawable = (AnimationDrawable) imageView.getBackground();
+//		findViewById(R.id.playBtn).setOnClickListener(onClickListener);
+//		findViewById(R.id.stopBtn).setOnClickListener(onClickListener);
 	}
 
 }

@@ -4,10 +4,10 @@ public class Student {
 	public String name;
 	public char sex;
 	public int age;
+	public String type;
 	public double height;
 	public String inSchool;
 	public String inClass;
-	public String type;
 
 	public void say() {
 		System.out.println("嗨，大家好，俺叫" + name + ",今年" + age + "岁,身高" + height

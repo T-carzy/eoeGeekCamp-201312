@@ -23,13 +23,15 @@
             android:id="@+id/playBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="播放" />
+            android:text="播放" 
+            android:onClick="play"/>
 
         <Button
             android:id="@+id/stopBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="停止" />
+            android:text="停止"
+            android:onClick="stop" />
     </LinearLayout>
 
 </LinearLayout>
