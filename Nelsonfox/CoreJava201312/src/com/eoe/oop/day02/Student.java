@@ -61,4 +61,13 @@ System.out.println("变");
 System.out.println(Arrays.toString(a));
 	}
 
+	@Override
+	public String toString() {
+		return "Student [inSchool=" + inSchool + ", inClass=" + inClass
+				+ ", name=" + name + ", sex=" + sex + ", age=" + age
+				+ ", height=" + height + ", type=" + type + ", toString()="
+				+ super.toString() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + "]";
+	}
+
 }
