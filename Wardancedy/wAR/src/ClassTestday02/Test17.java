@@ -3,9 +3,9 @@ package ClassTestday02;
 public class Test17 {
 
 	/**
-	 * ¿ÎÌÃÁ·Ï°£ºËµ³ö±äÁ¿bµÄÖµ
-	 * int i=Byte.Max_VALUE+1;
-	 * byte b=(byte)i;
+	 * è¯¾å ‚ç»ƒä¹ :è¯´å‡ºå˜é‡bçš„å€¼
+	 *  int i= Byte.MAX_VALUE + 1;
+		byte b= (byte) i;
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

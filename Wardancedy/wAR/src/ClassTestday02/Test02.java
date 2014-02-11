@@ -6,18 +6,18 @@ public class Test02 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-	String  name="º«Î°";
-	char sex='ÄĞ';
+	String  name="æä¼Ÿ";
+	char sex='ç”·';
 	int age=23;
 	double height=1.2;
 	boolean isMarry=false;
-	System.out.println("àË£¬´ó¼ÒºÃ£¬ÎÒ½Ğ"+name+",½ñÄê"+age+"Ëê£¬Éí¸ß"+height+"Ã×£¬ÒÑ»é£º"+isMarry);
-	name="ÀîÎ°";
-	sex='ÄĞ';
+	System.out.println("å—¨ï¼Œå¤§å®¶å¥½ï¼Œä¿ºå«"+name+",ä»Šå¹´"+age+"å²ï¼Œèº«é«˜ï¼š"+height+"ç±³\tå·²å©šï¼š"+isMarry);
+	name="éŸ©ä¼Ÿ";
+	sex='ç”·';
 	age=30;
 			height=1.8;
 	isMarry=true;
-	System.out.println("àË£¬´ó¼ÒºÃ£¬ÎÒ½Ğ"+name+",½ñÄê"+age+"Ëê£¬Éí¸ß"+height+"Ã×£¬ÒÑ»é"+isMarry);
+	System.out.println("å—¨ï¼Œå¤§å®¶å¥½ï¼Œä¿ºå«"+name+",ä»Šå¹´"+age+"å²ï¼Œèº«é«˜"+height+"ç±³\tå·²å©šï¼š"+isMarry);
 	}
 
 }

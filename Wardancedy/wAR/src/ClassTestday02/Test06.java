@@ -2,52 +2,53 @@ package ClassTestday02;
 
 public class Test06 {
 
+
 	/**
-	 * @param args
+	 * è°ƒç”¨åŒ…è£…ç±»æ˜¾ç¤ºå„åŸºæœ¬æ•°æ®ç±»å‹çš„å–å€¼èŒƒå›´ã€‚
 	 */
 	public static void main(String[] args) {
-		// ByteÀàµÄ³£ÓÃ·½·¨ºÍ³£Á¿
-System.out.println("byteµÄÊı¾İ×ÜÊı£º"+Math.pow(2, 8));
-System.out.println("byteµÄÈ¡Öµ·¶Î§£º"+Byte.MIN_VALUE+"~"+Byte.MAX_VALUE);
+		// Byteï¿½ï¿½Ä³ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½Í³ï¿½ï¿½ï¿½
+System.out.println("byteï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+Math.pow(2, 8));
+System.out.println("byteï¿½ï¿½È¡Öµï¿½ï¿½Î§ï¿½ï¿½"+Byte.MIN_VALUE+"~"+Byte.MAX_VALUE);
 byte bMax=Byte.parseByte("127");
 System.out.println(bMax);
-//ShortÀàµÄ³£ÓÃ·½·¨ºÍ³£Á¿
-System.out.println("shortµÄÊı¾İ×ÜÊı:"+Math.pow(2, 16));
-System.out.println("shortµÄÈ¡Öµ·¶Î§:"+Short.MIN_VALUE+"~"+Short.MAX_VALUE);
+//Shortï¿½ï¿½Ä³ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½Í³ï¿½ï¿½ï¿½
+System.out.println("shortï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+Math.pow(2, 16));
+System.out.println("shortï¿½ï¿½È¡Öµï¿½ï¿½Î§:"+Short.MIN_VALUE+"~"+Short.MAX_VALUE);
 short shortValue=Short.parseShort("1000");
 System.out.println(shortValue);
-//IntegerÀàµÄ³£ÓÃ·½·¨ºÍ³£Á¿
-System.out.println("intµÄÊı¾İ×ÜÊı:"+Math.pow(2, 32));
-System.out.println("intµÄÊı¾İ·¶Î§:"+Integer.MIN_VALUE+"~"+Integer.MAX_VALUE);
+//Integerï¿½ï¿½Ä³ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½Í³ï¿½ï¿½ï¿½
+System.out.println("intï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+Math.pow(2, 32));
+System.out.println("intï¿½ï¿½ï¿½ï¿½İ·ï¿½Î§:"+Integer.MIN_VALUE+"~"+Integer.MAX_VALUE);
 int intValue=Integer.parseInt("2000000");
 System.out.println(intValue);
 String binaryValue=Integer.toBinaryString(16);
 String hexValue=Integer.toHexString(16);
 String octalvalue=Integer.toOctalString(16);
-System.out.println("16×ª»»Îª¶ş¼¶ÖÆ:"+binaryValue);
-System.out.println("16×ª»»ÎªÊ®Áù½øÖÆÊı£º"+hexValue);
-System.out.println("16×ª»»Îª°Ñ½øÖÆÊı£º"+octalvalue);
+System.out.println("16×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+binaryValue);
+System.out.println("16×ªï¿½ï¿½ÎªÊ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+hexValue);
+System.out.println("16×ªï¿½ï¿½Îªï¿½Ñ½ï¿½ï¿½ï¿½ï¿½ï¿½"+octalvalue);
 
-//FloatÀàµÄ³£ÓÃ·½·¨ºÍ³£Á¿
+//Floatï¿½ï¿½Ä³ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½Í³ï¿½ï¿½ï¿½
 
-System.out.println("floatµÄÊı¾İ×ÜÊı£º"+Math.pow(2, 32));
-System.out.println("floatµÄÈ¡Öµ·¶Î§£º"+Float.MIN_VALUE+"~"+Float.MAX_VALUE);
+System.out.println("floatï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+Math.pow(2, 32));
+System.out.println("floatï¿½ï¿½È¡Öµï¿½ï¿½Î§ï¿½ï¿½"+Float.MIN_VALUE+"~"+Float.MAX_VALUE);
 float floatValue=Long.parseLong("2000000");
 System.out.println(floatValue);
 hexValue=Float.toHexString(16);
-System.out.println("16×ª»»ÎªÊ®Áù½øÖÆÊı£º"+hexValue);
+System.out.println("16×ªï¿½ï¿½ÎªÊ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+hexValue);
 
-//DoubleÀàµÄ³£ÓÃ·½·¨ºÍ³£Á¿
-System.out.println("doubleµÄÊı¾İ×ÜÊı£º"+Math.pow(2, 64));
-System.out.println("doubleµÄÈ¡Öµ·¶Î§£º"+Double.MIN_VALUE+"~"+Double.MAX_VALUE);
+//Doubleï¿½ï¿½Ä³ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½Í³ï¿½ï¿½ï¿½
+System.out.println("doubleï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+Math.pow(2, 64));
+System.out.println("doubleï¿½ï¿½È¡Öµï¿½ï¿½Î§ï¿½ï¿½"+Double.MIN_VALUE+"~"+Double.MAX_VALUE);
 double doubleValue=Long.parseLong("2000000");
 System.out.println(doubleValue);
 binaryValue=Long.toBinaryString(16);
 hexValue=Long.toHexString(16);
 octalvalue=Long.toOctalString(16);
-System.out.println("16×ª»»Îª¶ş½øÖÆ£º"+binaryValue);
-System.out.println("16×ª»»ÎªÊ®Áù½øÖÆÊı£º"+hexValue);
-System.out.println("16×ª»»Îª°Ë½øÖÆÊı£º"+octalvalue);
+System.out.println("16×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½"+binaryValue);
+System.out.println("16×ªï¿½ï¿½ÎªÊ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+hexValue);
+System.out.println("16×ªï¿½ï¿½Îªï¿½Ë½ï¿½ï¿½ï¿½ï¿½ï¿½"+octalvalue);
 
 
 

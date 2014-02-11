@@ -1,0 +1,31 @@
+作业
+1、输入本章所有例题。
+2、在com.ityw.oop.day02.entity包下创建Teacher类，该类继承Person类
+   (1)增加以下两个属性：
+   		String inSchool;//所在学校
+   		String worker;//职务
+   (2)增加一个交换两个变量值的方法:public void swap(int[] a,int i,int j);
+   (3)重写toString()返回老师的姓名和职务.
+   (4)重写equals()用姓名、性别、年龄、身高、性格、所在学校、职务作为是否相等
+     的条件。
+3、在com.ityw.oop.day02包下编写Exercise01类，测试Teacher类，
+   (1)创建两个Teacher对象t1和t2，数据均为
+   "张大飞", '男', 32, 1.99, "暴躁的", "达内测试学院", "讲师"，
+   (2)让t1说话，表达感情。
+   (3)并显示t1和t2是否是一个人。
+4、已知以下数据
+	String strPerson="李刚:男:33:1.67:快乐的";
+	String strBook="1:《疯狂Java》:ISBN18005:85";
+	(1)在com.ityw.oop.day02.entity包下创建Book对象，该对象包含以下属性：
+		id：代表书的编号；
+		name：代表书名；
+		author:代表作者，该属性的类型是Person；
+		isbn:代表书号；
+		price:代表书价。
+	(2)重写toString()，返回书名。
+	(3)重写equals(),两本书相等的条件是书号相等。
+	(4)编写public String details()，该方法显示书的所有属性值。
+5、在com.ityw.oop.day02包下编写Exercise02类，根据
+	String strPerson="李刚:男:33:1.67:快乐的";
+	String strBook="1:《疯狂Java》:ISBN18005:85";
+测试创建两个Book对象，并测试Book类的toString,details()和equals()。	   

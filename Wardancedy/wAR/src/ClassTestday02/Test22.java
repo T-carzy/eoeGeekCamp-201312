@@ -5,25 +5,25 @@ import java.util.Scanner;
 public class Test22 {
 
 	/**
-	 * Ê¾Àı Í¨¹ı¿ØÖÆÌ¨ÊäÈëÒ»¸öÈËµÄĞÕÃû  ĞÔ±ğ ÄêÁä Éí¸ßºÍĞÔ¸ñ
-	 * 	È»ºó ÈÃ¸ÃÈËºÍ´ó¼Ò×ö×ÔÎÒ½éÉÜ
+	 * ç¤ºä¾‹ï¼šé€šè¿‡æ§åˆ¶å°è¾“å…¥ä¸€ä¸ªäººçš„å§“åã€æ€§åˆ«ã€å¹´é¾„ã€èº«é«˜å’Œæ€§æ ¼
+	 * ç„¶åï¼Œè®©è¯¥äººå’Œå¤§å®¶åšè‡ªæˆ‘ä»‹ç»ã€‚
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("ĞÕÃû£º");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		String name=scanner.next();
-		System.out.println("ĞÔ±ğ£º");
+		System.out.println("ï¿½Ô±ï¿½");
 		char sex=scanner.next().charAt(0);
-		System.out.println("ÄêÁä:");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½:");
 		int age=scanner.nextInt();
-		System.out.println("Éí¸ß£º");
+		System.out.println("ï¿½ï¿½ß£ï¿½");
 		double height=scanner.nextDouble();
-		System.out.println("ĞÔ¸ñ");
+		System.out.println("ï¿½Ô¸ï¿½");
 		String type=scanner.next();
-		System.out.println("àË£¬´ó¼ÒºÃ£¬ÎÒ½Ğ "+name);
-		System.out.println("£¬½ñÄê"+age+"Ëê");
-		System.out.println("£¬ÎÒÊÇÒ»¸ö"+type+"µÄ"+sex+"Éú");
+		System.out.println("ï¿½Ë£ï¿½ï¿½ï¿½ÒºÃ£ï¿½ï¿½Ò½ï¿½ "+name);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+age+"ï¿½ï¿½");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½"+type+"ï¿½ï¿½"+sex+"ï¿½ï¿½");
 
 	}
 

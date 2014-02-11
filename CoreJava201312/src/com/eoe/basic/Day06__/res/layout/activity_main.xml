@@ -1,0 +1,37 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5"
+    android:orientation="horizontal">
+
+    <TextView
+        android:text="用户名" />
+	<EditText 
+	   	android:layout_gravity="fill_horizontal"
+	    android:hint="输入的字符在2-10个之间"
+	    android:layout_columnSpan="4"/>
+    <TextView
+        android:text="密码" />
+	<EditText
+	    android:layout_gravity="fill_horizontal"
+	    android:hint="输入的字符在2-10个之间"
+	    android:password="true"
+	    android:layout_columnSpan="4"/>
+	<Button 
+	    android:text="看不见"
+	    android:visibility="invisible"/>
+	<Button 
+	    android:drawableLeft="@drawable/login32x32"
+	    android:text="登陆"
+	    android:background="@drawable/login_btn_bg"/>
+	<Button 
+	    android:text="看不见"
+	    android:visibility="invisible"/>
+	<Button 
+	    android:drawableLeft="@drawable/login_exit32x32"
+	    android:text="退出"
+	    android:background="@drawable/login_btn_bg"/>
+	<Button 
+	    android:text="看不见"
+	    android:visibility="invisible"/>			
+</GridLayout>
