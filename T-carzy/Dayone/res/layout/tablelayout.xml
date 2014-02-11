@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="5" >
+
+    <TextView android:text="用  户  名" />
+
+    <EditText
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:hint="输入一万字以内" />
+
+    <TextView android:text="输入密码" />
+
+    <EditText
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:hint="输入一万字以内" />
+
+    <TextView android:text="确认密码" />
+
+    <EditText
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:hint="输入一万字以内" />
+
+    <TextView android:text="选择性别" />
+
+    <RadioGroup
+        android:layout_columnSpan="4"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女" />
+    </RadioGroup>
+    <TextView android:text="选择出生地" />
+    <Spinner
+        android:id="@+id/scitys"
+        android:layout_columnSpan="4"
+        android:entries="@array/citys" />
+
+    <TextView android:text="选择爱好" />
+
+    <RadioGroup
+        android:layout_columnSpan="4"
+        android:orientation="horizontal" >
+
+        <CheckBox android:text="跳楼" />
+
+        <CheckBox android:text="杀人" />
+
+        <CheckBox android:text="放火" />
+
+        <CheckBox android:text="抢劫" />
+    </RadioGroup>
+
+    <Button
+        android:enabled="false"
+        android:text="a"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnzhuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="注册"
+        android:textColor="#f12" />
+
+    <Button
+        android:enabled="false"
+        android:text="a"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="取消"
+        android:textColor="#f52" />
+
+    <Button
+        android:enabled="false"
+        android:text="a"
+        android:visibility="invisible" />
+
+</GridLayout>

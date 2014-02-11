@@ -59,6 +59,11 @@ public class Student extends Person1{
 			super(name);
 			// TODO Auto-generated constructor stub
 		}
+		@Override
+		public String toString() {
+			return this.name+" inSchool=" + inSchool + ", inClass=" + inClass
+					;
+		}
 		
 	
 	
