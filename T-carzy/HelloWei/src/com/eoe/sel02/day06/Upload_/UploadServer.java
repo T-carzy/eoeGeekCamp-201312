@@ -13,13 +13,13 @@ import java.util.concurrent.Executors;
 import com.eoe.sel02.day06.Download.FileInfo;
 
 public class UploadServer {
-	private static final String DEST_PATH = "e:/java_test/";
+	private static final String DEST_PATH = "e:/tools/";
 
 	public static void main(String[] args) {
 		ExecutorService pool = Executors.newCachedThreadPool();
 		try {
 			ServerSocket server=new ServerSocket(9999);
-			System.out.println("等待客户端连接");
+			System.out.println("等待客户端连接...");
 			while(true){
 			Socket socket = server.accept();
 			pool.execute(new UploadTask(socket));

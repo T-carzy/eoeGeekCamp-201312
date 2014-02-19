@@ -16,49 +16,46 @@ import java.util.Scanner;
 
 import com.eoe.sel02.day06.Download.FileInfo;
 
-public class UploadClient1 {
+public class UploadClient2 {
 	private static final String SRC_PATH="e:/java_test/";
-	private static final String FILENAME="eclipse-jee-kepler-SR1-win32-x86_64.zip/";
-	private static final String RECORD_FILENAME="eclipse-jee-kepler-SR1-win32-x86_64_recoed.dat";
+	private static final String FILENAME="genymotion-2.0.1-vbox.exe";
+	private static final String RECORD_FILENAME="genymotion-2.0.1-vbox_record.dat";
 	private static boolean isContinue=true;
 	public static void main(String[] args) {
 		new Thread(){
 			@Override
 			public void run() {
 				System.out.println("按任意键停止文件上传");
-				new Scanner(System.in);
+				new Scanner(System.in).next();
 				isContinue=false;
 			}
 		}.start();
 		ObjectOutputStream oos=null;
 		RandomAccessFile raf=null;
 		try {
-			Socket socket=new Socket("127.0.0.1", 9999);
-			long position=readPoistion();
-			FileInfo info=new FileInfo(FILENAME,position);
+			Socket socket=new Socket("127.0.0.1",9999);
+			long position=readPosition();
+			FileInfo info=new FileInfo(FILENAME, position);
 			oos=new ObjectOutputStream(socket.getOutputStream());
 			oos.writeObject(info);
-			raf=new RandomAccessFile(SRC_PATH+FILENAME,"r");
+			raf=new RandomAccessFile(SRC_PATH+FILENAME, "r");
 			byte[] buffer=new byte[1024];
 			int len;
 			raf.seek(position);
 			OutputStream out=socket.getOutputStream();
 			System.out.println(FILENAME+"开始上传");
-			while((len=raf.read(buffer))!=-1){
+			while((len=raf.read(buffer))!=-1&&isContinue){
 				out.write(buffer, 0, len);
 				position+=len;
 			}
 			position=isContinue?0:position;
-			savePositiom(position);
+			savePosition(position);
 			if(isContinue){
 				System.out.println(FILENAME+"上传完毕");
 			}else{
 				System.out.println(FILENAME+"上传被终止");
 			}
 		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -78,7 +75,7 @@ public class UploadClient1 {
 			}
 		}
 	}
-	static long readPoistion(){
+	static long readPosition(){
 		long position=0;
 		DataInputStream dis=null;
 		try {
@@ -107,7 +104,7 @@ public class UploadClient1 {
 		}
 		return position;
 	}
-	static void savePositiom(long position){
+	static void savePosition(long position){
 		DataOutputStream dos=null;
 		try {
 			dos=new DataOutputStream(new FileOutputStream(SRC_PATH+RECORD_FILENAME));
