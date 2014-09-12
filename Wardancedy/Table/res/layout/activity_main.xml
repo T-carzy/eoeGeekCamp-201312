@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+</LinearLayout>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1" >
+
+    <!-- 表格第一行：输入用户名 -->
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入字符2~10个字符" />
+    </TableRow>
+    <!-- 表格第二行 ：输入密码 -->
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="输入字符1~20个字符"
+            android:password="true" />
+    </TableRow>
+</TableLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+     >
+    <!-- 左填充 -->
+    <View 
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="登陆"
+        android:textColor="#fff" />
+    <!-- 右填充 -->
+    <View 
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"/>
+</LinearLayout>
+</LinearLayout>

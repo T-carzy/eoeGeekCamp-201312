@@ -1,0 +1,49 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="5"
+  >
+<EditText 
+    android:id="@+id/et"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_columnSpan="5"
+    android:hint="aaaa"/>
+<Button 
+    android:id="@+id/btn_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1"/>
+<Button 
+       android:id="@+id/btn_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2"/>
+<Button 
+       android:id="@+id/btn_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3"/>
+<Button 
+       android:id="@+id/btn_4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="4"/>
+<Button 
+    android:id="@+id/btnadd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="+"/>
+<Button 
+    android:id="@+id/btncompute"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="="/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+</GridLayout>

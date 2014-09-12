@@ -35,7 +35,7 @@ https://github.com/IceskYsl/eoeGeekCamp-201312
 
 在『sources』目录下，鼠标右键选择『Git Bash Here』，进入命令行输入
 ```
-git clone git@github.com:iceskysl/eoeGeekCamp-201312.git
+git clone git@github.com:iceskysl/eoeGeekCamp-201312.git (注意：这个地方用你自己的git库地址，不要用我的！！)
 ```
 
 2.4 创建自己的文件夹
@@ -81,3 +81,5 @@ git push origin master
 
 以后每天都重复上面的3和4的步骤就可以了~
 另外，切记，只提交代码，不要提交文档，压缩包等大文件~
+
+4.4

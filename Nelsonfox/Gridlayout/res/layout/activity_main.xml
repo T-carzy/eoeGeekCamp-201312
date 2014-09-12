@@ -1,0 +1,76 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5" >
+
+    <TextView android:text="用  户  名" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:hint="输入一万字以内" />
+
+    <TextView android:text="输入密码" />
+
+    <EditText
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:hint="输入一万字以内" 
+        android:password="true"/>
+
+    <TextView android:text="确认密码" />
+
+    <EditText
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:hint="输入一万字以内" 
+        android:password="true"/>
+    <TextView 
+        android:text="性别"/>
+    <RadioGroup 
+        android:orientation="horizontal"
+        android:layout_columnSpan="4">
+        <RadioButton 
+            android:text="男"
+            android:checked="true"/>
+        <RadioButton 
+            android:text="女"/>
+    </RadioGroup>
+<TextView 
+    android:text="所在地"/>
+<Spinner 
+    android:layout_columnSpan="4"
+    android:entries="@array/City"/>
+<TextView 
+    android:text="爱好"/>
+<RadioGroup 
+    android:orientation="horizontal"
+    android:layout_columnSpan="4">
+    <RadioButton 
+        android:text="杀人"/>
+    <RadioButton 
+        android:text="纵火"/>
+    <RadioButton 
+        android:text="抢劫"/>
+    <RadioButton 
+        android:text="跳楼"/>
+</RadioGroup>
+<Button 
+    android:visibility="invisible"/>
+<Button 
+    android:id="@+id/btnLogin"
+    android:text="注册"
+
+    android:textColor="#f67"/>
+<Button 
+    android:visibility="invisible"/>
+<Button 
+    android:id="@+id/btnExit"
+    android:text="取消"
+
+    android:textColor="#f11"/>
+<Button 
+    android:visibility="invisible"/>
+</GridLayout>
